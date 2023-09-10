@@ -29,6 +29,19 @@
 
         h1 {
             color: rgb(8, 6, 120);
+            border-radius: 100px;
+            border-color: red;
+            cursor: pointer;
+            align-items: center;
+            /* make sure the button is not bigger than the image */
+            display: flex;
+            flex-direction: column;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        h2 {
+            color: rgb(8, 6, 120);
+            border-color: red;
             cursor: pointer;
             align-items: center;
             /* make sure the button is not bigger than the image */
@@ -86,6 +99,7 @@
         .center-image:hover {
             border: 2px solid rgb(8, 6, 120);
             box-shadow: 0 0 10px rgba(8, 6, 120, 0.5);
+            border-color: aqua;
         }
 
         .different-button-link {
@@ -100,8 +114,12 @@
         }
 
         .different-button-link:hover {
+            border: 2px solid rgb(8, 6, 120);
             background-color: rgb(8, 6, 120);
+            border-color: aqua;
         }
+
+        
     </style>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -135,10 +153,6 @@
         <a href="https://github.com/DisabledMallis/NuvolaWebRepo/releases/latest/download/Nuvola.dll"
             class="different-button-link">NUVOLA Hacked Client DLL</a>
     </h2>
-    <!--Footer move to the left a bit-->
-    <footer style="align-items: center; justify-content: center; display: flex; flex-direction: column; margin-right: 40px;">
-        <p>v1.0.0</p>
-    </footer>
 
 </body>
 
