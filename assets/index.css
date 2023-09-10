@@ -127,7 +127,7 @@ img {
 }
 
  footer {
-  background-color: rebeccapurple;
+  background-color: rgb(8, 6, 120);
   grid-column: 1 / 3;
   padding: 15px;
   text-align: center;
@@ -138,7 +138,7 @@ img {
 }
 footer p {
   margin: 0;
-  background-color: rebeccapurple;
+  background-color: rgb(8, 6, 120);
   color: black;
 }
 
