@@ -119,7 +119,7 @@ body {
 
 img {
   width: 25%;
-  height: auto;
+  height: 25%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -166,13 +166,6 @@ svg {
   position: absolute;
   width: 100%;
   height: 100%;
-}
-
-.demo--text {
-  font: 12em/1 PT Mono, monospace;
-  letter-spacing: 0.05em;
-  pointer-events: none;
-  text-align: center;
 }
 
 .full-width {
