@@ -89,24 +89,6 @@ a:hover {
   padding: 0.5rem 1.5rem;
 }
 
-a:active {
-  background-color: #777;
-}
-
-form label {
-  display: block;
-  margin-bottom: 0.5rem;
-  color: #fff;
-}
-
-form input,
-form textarea {
-  border: none;
-  border-radius: 5px;
-  padding: 0.5rem;
-  width: 100%;
-}
-
 h1 a:hover {
   background-color: #14197c;
 }
