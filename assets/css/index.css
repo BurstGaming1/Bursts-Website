@@ -68,7 +68,7 @@ a {
   padding: 0.50rem 0.75rem;
   text-align: center;
   text-decoration: none;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), color 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   border-radius: 10px;
   /* change the size of the button so it's not the whole width */
   width: 25%,
@@ -108,8 +108,9 @@ form textarea {
 }
 
 h1 a:hover {
-  color: #fff;
+  background-color: #14197c;
 }
+
 form input[type="submit"]:hover {
   background-color: #555;
 }
