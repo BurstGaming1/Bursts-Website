@@ -84,8 +84,8 @@ li a{
   background-color:  rgba(8, 6, 120,0.5);
   border: 1px solid #14197c;
   border-color: #14197c;
-  font-size: 1rem;
   color: #0e159f;
+  font-size: 18px;
   align-items: center;
 }
 
@@ -114,14 +114,6 @@ form label {
   display: block;
   margin-bottom: 0.5rem;
   color: #fff;
-}
-
-form input,
-form textarea {
-  border: none;
-  border-radius: 5px;
-  padding: 0.5rem;
-  width: 100%;
 }
 
 h1 a:hover {
