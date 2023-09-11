@@ -22,17 +22,22 @@ body {
 }
 
 header {
-  background-color: #333;
+  background-color: transparent;
   color: #fff;
   padding: 1px;
 }
 
 nav ul {
+  background-color: transparent;
   display: flex;
   justify-content: center;
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+ul {
+  color: transparent;
 }
 
 nav li {
@@ -80,8 +85,20 @@ main form label {
 
 
 li a{
-  color: black;
+  font-size: 1rem;
+  color: #14197c;
   align-items: center;
+}
+
+li a:hover {
+  /* make it glow when hovered */
+  background-color: #14197c;
+  color: #fff;
+  border-radius: 10px;
+  padding: 0.5rem 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  transform: scale(1.1);
 }
 
 a:hover {
