@@ -86,6 +86,7 @@ main form label {
 
 li a{
   border: 1px solid #14197c;
+  border-color: #14197c;
   font-size: 1rem;
   color: #14197c;
   align-items: center;
