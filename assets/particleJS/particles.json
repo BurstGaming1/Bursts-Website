@@ -14,10 +14,10 @@
       "type": "circle",
       "stroke": {
         "width": 0,
-        "color": "#000000"
+        "color": "#3245a8"
       },
       "polygon": {
-        "nb_sides": 5
+        "nb_sides": 120
       },
       "image": {
         "src": "img/github.svg",
@@ -48,7 +48,7 @@
     "line_linked": {
       "enable": true,
       "distance": 150,
-      "color": "#ffffff",
+      "color": "#3245a8",
       "opacity": 0.4,
       "width": 1
     },

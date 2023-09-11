@@ -1,4 +1,15 @@
-
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  z-index: -1;
+  cursor: default;
+  background-position: 50% 50%;
+}
 
 body {
   background-color: black;
@@ -57,7 +68,7 @@ a {
   padding: 0.50rem 0.75rem;
   text-align: center;
   text-decoration: none;
-  transition: background-color 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), color 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: background-color 0.3s;
   border-radius: 10px;
   /* change the size of the button so it's not the whole width */
   width: 25%,
@@ -78,8 +89,26 @@ a:hover {
   padding: 0.5rem 1.5rem;
 }
 
+a:active {
+  background-color: #777;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+form input,
+form textarea {
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem;
+  width: 100%;
+}
+
 h1 a:hover {
-  background-color: #14197c;
+  color: #fff;
 }
 form input[type="submit"]:hover {
   background-color: #555;
@@ -97,6 +126,59 @@ img {
   margin-left: auto;
   margin-right: auto;
   border-radius: 25%;
+}
+
+ footer {
+  background-color: rgb(8, 6, 120);
+  grid-column: 1 / 3;
+  padding: 15px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 850px;
+  border-radius: 20px;
+}
+footer p {
+  margin: 0;
+  background-color: rgb(8, 6, 120);
+  color: black;
+}
+
+p {
+  text-align: center;
+  color: rebeccapurple;
+  font: bolder;
+}
+
+
+@import url(https://fonts.google.com/specimen/PT+Mono);
+svg {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+}
+
+BODY {
+  background: #000;
+  overflow: hidden;
+}
+
+svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.full-width {
+  width: 100%;
+  text-align: center;
+}
+
+h1 span {
+  color: rgb(8, 6, 120); /* Set the color of the text */
+  cursor: pointer;
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 
