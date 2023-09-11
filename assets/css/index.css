@@ -1,15 +1,4 @@
-#particles-js {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: #000000;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-  z-index: -1;
-  cursor: default;
-  background-position: 50% 50%;
-}
+
 
 body {
   background-color: black;
