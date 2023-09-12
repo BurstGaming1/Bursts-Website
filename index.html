@@ -7,14 +7,6 @@
     <link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/1150270799115194423/1150477552004124784/USA.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/index.css" />
     <style>
-    body {
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        justify-content: flex-end;
-        position: relative;
-    }
-
     #particles-js {
         position: absolute;
         width: 100%;
@@ -90,13 +82,13 @@
         border-radius: 75%;
         border: #2100f8 2px solid;
         background-color: transparent;
+        transition: border 0.4s ease, box-shadow 0.4s ease;
     }
 
     .center-image:hover {
         border: 2px solid rgba(8, 6, 120, 0.5);
-        box-shadow: 0, 0, 0, 5px rgba(8, 6, 120, 0.5);
+        box-shadow: 0 0 10px rgba(90, 5, 150, 0.5);
         border-color: rgb(120, 6, 6);
-        transition: background-color 8s cubic-bezier(0.175, 0.885, 0.32, 1.275), color 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     }
 
     .developer-link {
@@ -106,7 +98,6 @@
     }
     
     .different-button-link {
-        margin-top: 100px;
         padding: 3px 8px;
         background-color: rgba(8, 6, 120, 0.2);
         text-decoration: none;
@@ -115,7 +106,7 @@
         margin: 5px;
         text-align: center;
     }
-    
+
     .different-button-link:hover {
         /* make when they hover over the button it changes the text */
         background-color: rgba(8, 6, 120, 0.58);
@@ -133,7 +124,8 @@
 
     }
 
-        
+
+    /* particles.js container */
     </style>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
