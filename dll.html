@@ -7,13 +7,6 @@
     <link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/1150270799115194423/1150477552004124784/USA.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/index.css" />
     <style>
-    body {
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        justify-content: flex-end;
-        position: relative;
-    }
 
     #particles-js {
         position: absolute;
@@ -147,9 +140,11 @@
 </script>
 <body>
     <div id="particles-js"></div>
+    <div id="mouse-trail"></div>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="assets/particleJS/particle.js"></script> <!-- particles.js configuration -->
     <header>
+        <div id="current-time" style="margin: 0; padding: 0; text-align: center;"></div>
         <nav>
           <ul>
             <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -158,10 +153,10 @@
         </nav>
       </header>
     <h1 style="margin-top: 10px;">
-        <a style="font-family: 'Arial', sans-serif; font-size: 40px; color: #2100f8;" href="https://www.youtube.com/@BurstGaming1" class="developer-link">
+        <a style="font-family: 'Arial', sans-serif; font-size: 40px;" href="https://www.youtube.com/@BurstGaming1" class="developer-link">
             BurstGaming
         </a>
-        <a href="https://youtube.com/@VariabIes" class="developer-link" style="font-family: 'Arial', sans-serif; font-size: 16px; color: #999;">
+        <a href="https://youtube.com/@VariabIes" class="developer-link" style="font-family: 'Arial', sans-serif; font-size: 16px; color: rgba(0, 30, 255, 0.7);">
             Developer: Andrew
         </a>
     </h1>
@@ -171,12 +166,19 @@
                 alt="Bursts Logo" class="center-image">
         </a>
     </p>
-    <h2 style="margin-top: 275px; align-items: center; justify-content: center; display: flex; flex-direction: column;">
+    <h2 style="margin-top: 275px; align-items: center; justify-content: center; display: flex; flex-direction: row;">
         <a href="https://github.com/OvermindMC/Ares-Releases/releases/latest/download/Ares.dll"
             class="different-button-link">ARES Hacked Client DLL</a>
         <a href="https://github.com/DisabledMallis/NuvolaWebRepo/releases/latest/download/Nuvola.dll"
             class="different-button-link">NUVOLA Hacked Client DLL</a>
     </h2>
+    <script style="padding: 0; margin: 0;">
+        /* get the Time.js file */
+        $.getScript("assets/js/time.js", function () {
+            /* run the function in the Time.js file */
+            currentTime();
+        });
+    </script>
 </body>
 
 </html>

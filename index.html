@@ -90,13 +90,13 @@
         border-radius: 75%;
         border: #2100f8 2px solid;
         background-color: transparent;
-        transition: border 0.4s ease, box-shadow 0.4s ease;
     }
 
     .center-image:hover {
         border: 2px solid rgba(8, 6, 120, 0.5);
-        box-shadow: 0 0 10px rgba(90, 5, 150, 0.5);
+        box-shadow: 0, 0, 0, 5px rgba(8, 6, 120, 0.5);
         border-color: rgb(120, 6, 6);
+        transition: background-color 8s cubic-bezier(0.175, 0.885, 0.32, 1.275), color 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     }
 
     .developer-link {
@@ -106,6 +106,7 @@
     }
     
     .different-button-link {
+        margin-top: 100px;
         padding: 3px 8px;
         background-color: rgba(8, 6, 120, 0.2);
         text-decoration: none;
@@ -114,7 +115,7 @@
         margin: 5px;
         text-align: center;
     }
-
+    
     .different-button-link:hover {
         /* make when they hover over the button it changes the text */
         background-color: rgba(8, 6, 120, 0.58);
@@ -147,9 +148,11 @@
 </script>
 <body>
     <div id="particles-js"></div>
+    <div id="mouse-trail"></div>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="assets/particleJS/particle.js"></script> <!-- particles.js configuration -->
     <header>
+        <div id="current-time" style="margin: 0; padding: 0; text-align: center;"></div>
         <nav>
           <ul>
             <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -157,7 +160,7 @@
           </ul>
         </nav>
       </header>
-    <h1 style="margin-top: 10px;">
+    <h1>
         <a style="font-family: 'Arial', sans-serif; font-size: 40px; color: rgba(0, 30, 255, 0.7);" href="https://www.youtube.com/@BurstGaming1" class="developer-link">
             BurstGaming
         </a>
@@ -171,10 +174,21 @@
                 alt="Bursts Logo" class="center-image">
         </a>
     </p>
-        <h2 style="margin-top: 275px; align-items: center; justify-content: center; display: flex; flex-direction: column;"> 
+        <h2 style="margin-top: 275px; align-items: center; justify-content: center; display: flex; flex-direction: row;"> 
             <a href="https://www.youtube.com/@BurstGaming1" class="different-button-link">YouTube</a>
             <a href="https://discord.gg/CXPHSYa4Af" class="different-button-link">Discord</a>
         </h2>
-</body>
-
+        <script>
+            /* get the Time.js file */
+            $.getScript("assets/js/time.js", function () {
+                /* run the function in the Time.js file */
+                currentTime();
+            });
+        </script>
+    </body>
 </html>
+        
+        
+        
+        
+        
