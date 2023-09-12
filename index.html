@@ -152,7 +152,7 @@
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="assets/particleJS/particle.js"></script> <!-- particles.js configuration -->
     <header>
-        <div id="current-time" style="margin: 0; padding: 0; text-align: center;"></div>
+        <div id="current-time" style="margin: 0; padding: 0; text-align: center; src: url('assets/js/Time.js');"></div>
         <nav>
           <ul>
             <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -178,13 +178,6 @@
             <a href="https://www.youtube.com/@BurstGaming1" class="different-button-link">YouTube</a>
             <a href="https://discord.gg/CXPHSYa4Af" class="different-button-link">Discord</a>
         </h2>
-        <script>
-            /* get the Time.js file */
-            $.getScript("assets/js/time.js", function () {
-                /* run the function in the Time.js file */
-                currentTime();
-            });
-        </script>
     </body>
 </html>
         
