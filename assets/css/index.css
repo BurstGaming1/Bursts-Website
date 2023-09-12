@@ -19,6 +19,12 @@ header h3 {
   font-family: 'PT Mono', monospace;
   font-size: 20px;
   text-align: center;
+  background-image: linear-gradient(45deg, rgb(255, 0, 0), rgb(123, 0, 255) 33%, rgb(34, 0, 255) 33%, rgb(0, 38, 255) 66%, rgb(0, 81, 255) 66%, rgb(255, 0, 0));
+  background-size: 50% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: rainbow 3.14159265359s linear infinite;
 }
 
 body h2 {
@@ -29,24 +35,7 @@ body h2 {
   margin-top: 20px;
 }
 
-different-button-link {
-  margin-top: 100px;
-  padding: 3px 8px;
-  background-color: rgba(8, 6, 120, 0.2);
-  text-decoration: none;
-  border-radius: 5px;
-  color: rgba(0, 30, 255, 0.7);
-  margin: 5px;
-  text-align: center;
-}
 
-.header {
-  color: rgb(252, 23, 23);
-  font-family: 'PT Mono', monospace;
-  font-size: 20px;
-  text-align: center;
-  margin-top: 20px;
-}
 
 * {
   box-sizing: border-box;
@@ -56,15 +45,21 @@ different-button-link {
 
 
 /* Apply rainbow gradient to header text */
-header {
-  /* Create a gradient text effect */
-  background: linear-gradient(to right, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #8f00ff);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  /* Animation properties */
-  background-size: 400% 400%;
-  animation: rainbow 10s ease-in-out infinite alternate; /* Use 'alternate' for back and forth */
+header nav li{
+  margin-bottom: 20px;
+  font-family: 'PT Mono', monospace;
+  font-size: 20px;
+  text-align: center;
+}
+
+@keyframes header {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+  
 }
 
 /* Animation for rainbow gradient */
@@ -93,15 +88,23 @@ nav li {
 }
 
 nav a {
-  color: #fff;
-  text-decoration: none;
+  margin-bottom: 20px;
+  font-family: 'PT Mono', monospace;
+  font-size: 20px;
+  text-align: center;
+  background-image: linear-gradient(45deg, rgb(255, 0, 0), rgb(123, 0, 255) 33%, rgb(34, 0, 255) 33%, rgb(34, 0, 255) 66%, #00f 66%, rgb(255, 0, 0));
+  background-size: 50% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: rainbow 3s linear infinite;
 }
 
 main {
   padding: 2rem;
 }
 
-section {
+.section {
   margin-bottom: 2rem;
   font: serif;
   /* make the content get auto sorted */
@@ -135,9 +138,7 @@ li a{
   background-color:  rgba(8, 6, 120, 0.145);
   border: 1px solid #14197c;
   border-color: #14197c;
-  color: rgba(0, 30, 255, 0.7);
   font-size: 18px;
-  transition: background-color 6s cubic-bezier(0.175, 0.885, 0.32, 1.275), color 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   align-items: center;
 }
 
@@ -145,11 +146,10 @@ li a:hover {
   /* make it glow when hovered */
   background-color: rgba(8, 6, 120, 0.703);
   color: rgba(0, 30, 255, 0.7);
-  border-radius: 10px;
+  border-radius: 15px;
   padding: 0.5rem 1.5rem;
   text-align: center;
   text-decoration: none;
-  transition: background-color 6s cubic-bezier(0.175, 0.885, 0.32, 1.275), color 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 a:hover {
@@ -214,7 +214,7 @@ svg {
   text-align: center;
 }
 
-h1 span {
+.h1 span {
   color: rgb(8, 6, 120); /* Set the color of the text */
   cursor: pointer;
   position: relative;
