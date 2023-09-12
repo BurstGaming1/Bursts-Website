@@ -206,14 +206,6 @@ svg {
   width: 100%;
   text-align: center;
 }
-#mouse-trail {
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 50%;
-  pointer-events: none; /* To allow interactions with underlying elements */
-}
 
 h1 span {
   color: rgb(8, 6, 120); /* Set the color of the text */
